@@ -1,7 +1,11 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 export const Search = () => {
   const [term, setTerm] = useState("")
+
+  useEffect(() => {
+    console.log("hey")
+  }, [])
 
   return (
     <div>
