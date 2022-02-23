@@ -1,5 +1,5 @@
 import React from "react"
 
 export const Accordion = ({ items }) => {
-  return <div>this is accordion comp</div>
+  return <div>{items.length}</div>
 }
