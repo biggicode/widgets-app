@@ -27,7 +27,6 @@ export const Accordion = ({ items }) => {
           </React.Fragment>
         )
       })}
-      <h1>{activeIndex}</h1>
     </div>
   )
 }
