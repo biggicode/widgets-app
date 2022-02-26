@@ -18,10 +18,25 @@ const items = [
   },
 ]
 
+const options = [
+  {
+    label: "Color Red",
+    value: "red",
+  },
+  {
+    label: "Color green",
+    value: "green",
+  },
+  {
+    label: "Color blue",
+    value: "blue",
+  },
+]
+
 export const App = () => {
   return (
     <div>
-      <Search />
+      <DropDown />
     </div>
   )
 }
