@@ -36,7 +36,7 @@ const options = [
 export const App = () => {
   return (
     <div>
-      <DropDown />
+      <DropDown options={options} />
     </div>
   )
 }
