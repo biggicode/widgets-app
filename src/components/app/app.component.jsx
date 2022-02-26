@@ -1,6 +1,7 @@
 import React from "react"
 import { Accordion } from "../accordion"
 import { Search } from "../search"
+import { DropDown } from "../drop-down"
 
 const items = [
   {
