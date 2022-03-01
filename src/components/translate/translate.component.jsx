@@ -17,9 +17,15 @@ const options = [
 ]
 
 export const Translate = () => {
+  const [language, setLanguage] = useState(options[0])
+
   return (
     <div>
-      <DropDown />
+      <DropDown
+        options={options}
+        selected={language}
+        onSelectedChange={setLanguage}
+      />
     </div>
   )
 }
