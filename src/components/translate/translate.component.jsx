@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { DropDown } from "../drop-down"
 import { Convert } from "../convert"
-//AIzaSyCHUCmpR7cT_yDFHC98CZJy2LTms-IwDlM
 
 const options = [
   {
