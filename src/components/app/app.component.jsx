@@ -39,7 +39,31 @@ const showAccordion = () => {
     return <Accordion items={items} />
   }
 }
+const showDropdown = () => {
+  if (window.location.pathname === "/dropdown") {
+    return <DropDown />
+  }
+}
+
+const showList = () => {
+  if (window.location.pathname === "/list") {
+    return <Search />
+  }
+}
+
+const showTranslate = () => {
+  if (window.location.pathname === "/translate") {
+    return <Translate />
+  }
+}
 
 export const App = () => {
-  return <div>{showAccordion()}</div>
+  return (
+    <div>
+      {showAccordion()}
+      {showDropdown()}
+      {showList()}
+      {showTranslate()}
+    </div>
+  )
 }
