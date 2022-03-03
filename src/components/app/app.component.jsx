@@ -4,6 +4,7 @@ import { Search } from "../search"
 import { DropDown } from "../drop-down"
 import { Translate } from "../translate"
 import { Route } from "../route"
+import { Header } from "../header"
 
 const items = [
   {
@@ -35,34 +36,12 @@ const options = [
   },
 ]
 
-const showAccordion = () => {
-  if (window.location.pathname === "/") {
-    return <Accordion items={items} />
-  }
-}
-const showDropdown = () => {
-  if (window.location.pathname === "/dropdown") {
-    return <DropDown />
-  }
-}
-
-const showList = () => {
-  if (window.location.pathname === "/list") {
-    return <Search />
-  }
-}
-
-const showTranslate = () => {
-  if (window.location.pathname === "/translate") {
-    return <Translate />
-  }
-}
-
 export const App = () => {
   const [selected, setSelected] = useState(options[0])
 
   return (
     <div>
+      <Header />
       <Route path="/">
         <Accordion items={items} />
       </Route>
